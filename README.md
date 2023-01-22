@@ -1,5 +1,4 @@
-# uC1_2023_GARCIA_MARIA
-REPOSITORIO DE PROYECTOS-UNP
+
 # unp
 
 *Curso:* Microcontroladores I
