@@ -24,4 +24,5 @@ P1-Corrimiento_Leds:programa que permita realizar un corrimiento de leds conecta
 P2-Display_7SEG:un programa que permita mostrar los valores alfanuméricos(0-9 y A-F) en un display de 7 segmentos ánodo común.
 
 PARCIAL NUMERO 2
+
  EJER2: Secuencia de leds en puerto C, con prioridad alta y baja
