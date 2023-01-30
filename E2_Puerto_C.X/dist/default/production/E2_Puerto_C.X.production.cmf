@@ -1,0 +1,440 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/EJERCICIO_2.o
+High_Priority CODE 0 18 18 10 1 2
+CODE - 0 28 28 150 1 1
+low_priority CODE 0 4 4 14 1 2
+udata_acs COMRAM 1 500 500 6 1 1
+leds_puerto_C CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 178-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 178-1FFFF 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FFFF 1
+CODE 178-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 178-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 506-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/EJERCICIO_2.o
+28 CODE ABS >53:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+2C CODE ABS >54:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+30 CODE ABS >55:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+34 CODE ABS >56:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+38 CODE ABS >57:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+3C CODE ABS >61:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+3E CODE ABS >62:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+42 CODE ABS >63:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+44 CODE ABS >64:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+48 CODE ABS >65:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+4C CODE ABS >68:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+4E CODE ABS >69:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+50 CODE ABS >70:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+52 CODE ABS >71:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+54 CODE ABS >72:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+56 CODE ABS >73:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+58 CODE ABS >74:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+5A CODE ABS >75:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+5E CODE ABS >76:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+60 CODE ABS >77:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+64 CODE ABS >78:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+66 CODE ABS >79:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+6A CODE ABS >80:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+6C CODE ABS >81:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+70 CODE ABS >82:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+74 CODE ABS >85:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+76 CODE ABS >86:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+7A CODE ABS >89:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+7C CODE ABS >90:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+7E CODE ABS >92:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+80 CODE ABS >93:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+82 CODE ABS >94:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+84 CODE ABS >95:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+86 CODE ABS >96:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+8A CODE ABS >99:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+8C CODE ABS >100:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+90 CODE ABS >101:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+94 CODE ABS >103:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+96 CODE ABS >105:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+98 CODE ABS >106:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+9C CODE ABS >107:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+9E CODE ABS >108:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+A2 CODE ABS >109:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+A6 CODE ABS >114:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+A8 CODE ABS >115:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+AA CODE ABS >116:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+AC CODE ABS >117:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+AE CODE ABS >118:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+B0 CODE ABS >119:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+B2 CODE ABS >124:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+B4 CODE ABS >125:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+B6 CODE ABS >126:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+B8 CODE ABS >127:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+BA CODE ABS >128:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+BC CODE ABS >131:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+BE CODE ABS >132:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C0 CODE ABS >133:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C2 CODE ABS >134:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C4 CODE ABS >135:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C6 CODE ABS >138:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C8 CODE ABS >139:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+CA CODE ABS >140:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+CC CODE ABS >141:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+CE CODE ABS >144:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+D0 CODE ABS >145:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+D2 CODE ABS >146:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+D4 CODE ABS >147:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+D6 CODE ABS >148:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+D8 CODE ABS >149:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+DA CODE ABS >150:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+DC CODE ABS >154:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+DE CODE ABS >155:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+E0 CODE ABS >156:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+E2 CODE ABS >159:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+E4 CODE ABS >160:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+E6 CODE ABS >161:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+E8 CODE ABS >164:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+EA CODE ABS >165:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+EC CODE ABS >166:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+EE CODE ABS >167:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+F0 CODE ABS >178:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+F2 CODE ABS >179:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+F4 CODE ABS >180:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+F6 CODE ABS >181:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+F8 CODE ABS >182:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+FA CODE ABS >185:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+FC CODE ABS >186:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+FE CODE ABS >187:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+100 CODE ABS >190:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+102 CODE ABS >191:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+104 CODE ABS >192:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+106 CODE ABS >195:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+108 CODE ABS >196:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+10A CODE ABS >197:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+10C CODE ABS >200:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+10E CODE ABS >201:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+110 CODE ABS >202:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+112 CODE ABS >204:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+114 CODE ABS >205:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+116 CODE ABS >206:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+118 CODE ABS >207:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+11A CODE ABS >208:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+11C CODE ABS >209:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+11E CODE ABS >210:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+120 CODE ABS >211:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+122 CODE ABS >212:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+124 CODE ABS >213:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+126 CODE ABS >214:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+128 CODE ABS >217:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+12A CODE ABS >218:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+12C CODE ABS >221:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+12E CODE ABS >222:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+130 CODE ABS >224:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+132 CODE ABS >225:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+134 CODE ABS >226:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+138 CODE ABS >227:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+13A CODE ABS >228:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+13E CODE ABS >229:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+140 CODE ABS >232:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+142 CODE ABS >233:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+144 CODE ABS >235:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+146 CODE ABS >236:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+148 CODE ABS >238:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+14A CODE ABS >239:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+14C CODE ABS >241:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+14E CODE ABS >242:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+150 CODE ABS >243:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+154 CODE ABS >244:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+156 CODE ABS >245:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+15A CODE ABS >246:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+15C CODE ABS >247:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+160 CODE ABS >248:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+162 CODE ABS >251:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+164 CODE ABS >252:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+166 CODE ABS >254:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+168 CODE ABS >255:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+16A CODE ABS >256:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+16E CODE ABS >257:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+170 CODE ABS >258:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+174 CODE ABS >259:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+176 CODE ABS >262:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+18 High_Priority CODE >34:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+1A High_Priority CODE >35:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+1E High_Priority CODE >36:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+22 High_Priority CODE >38:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+24 High_Priority CODE >39:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+26 High_Priority CODE >40:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+4 low_priority CODE >19:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+6 low_priority CODE >20:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+A low_priority CODE >22:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+C low_priority CODE >23:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+10 low_priority CODE >25:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+12 low_priority CODE >26:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+14 low_priority CODE >28:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+16 low_priority CODE >29:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+0 leds_puerto_C CODE >15:C:\Users\94996\Desktop\REPO_MICRO_LA FE\uC1_2023_GARCIA_MARIA\E2_Puerto_C.X\EJERCICIO_2.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 178 0 ABS 0 - -
+__Hspace_1 506 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 178 0 ABS 0 udata_bank5 -
+__Hudata_bank6 178 0 ABS 0 udata_bank6 -
+__Hudata_bank7 178 0 ABS 0 udata_bank7 -
+__Hudata_bank8 178 0 ABS 0 udata_bank8 -
+__Hudata_bank9 178 0 ABS 0 udata_bank9 -
+__Hudata_bank10 178 0 ABS 0 udata_bank10 -
+__Hudata_bank11 178 0 ABS 0 udata_bank11 -
+__Hudata_bank12 178 0 ABS 0 udata_bank12 -
+__Hudata_bank13 178 0 ABS 0 udata_bank13 -
+__Hudata_bank14 178 0 ABS 0 udata_bank14 -
+__Hudata_bank15 178 0 ABS 0 udata_bank15 -
+__Hudata_bank16 178 0 ABS 0 udata_bank16 -
+__Hudata_bank17 178 0 ABS 0 udata_bank17 -
+__Hudata_bank18 178 0 ABS 0 udata_bank18 -
+__Hudata_bank19 178 0 ABS 0 udata_bank19 -
+__Hudata_bank20 178 0 ABS 0 udata_bank20 -
+__Hudata_bank21 178 0 ABS 0 udata_bank21 -
+__Hudata_bank22 178 0 ABS 0 udata_bank22 -
+__Hudata_bank23 178 0 ABS 0 udata_bank23 -
+__Hudata_bank24 178 0 ABS 0 udata_bank24 -
+__Hudata_bank25 178 0 ABS 0 udata_bank25 -
+__Hudata_bank26 178 0 ABS 0 udata_bank26 -
+__Hudata_bank27 178 0 ABS 0 udata_bank27 -
+__Hudata_bank28 178 0 ABS 0 udata_bank28 -
+__Hudata_bank29 178 0 ABS 0 udata_bank29 -
+__Hudata_bank30 178 0 ABS 0 udata_bank30 -
+__Hudata_bank31 178 0 ABS 0 udata_bank31 -
+__Hudata_bank32 178 0 ABS 0 udata_bank32 -
+__Hudata_bank33 178 0 ABS 0 udata_bank33 -
+__Hudata_bank34 178 0 ABS 0 udata_bank34 -
+__Hudata_bank35 178 0 ABS 0 udata_bank35 -
+__Hudata_bank36 178 0 ABS 0 udata_bank36 -
+__Hudata_bank37 178 0 ABS 0 udata_bank37 -
+__Hudata_bank38 178 0 ABS 0 udata_bank38 -
+__Hudata_bank39 178 0 ABS 0 udata_bank39 -
+__Hudata_bank40 178 0 ABS 0 udata_bank40 -
+__Hudata_bank41 178 0 ABS 0 udata_bank41 -
+__Hudata_bank42 178 0 ABS 0 udata_bank42 -
+__Hudata_bank43 178 0 ABS 0 udata_bank43 -
+__Hudata_bank44 178 0 ABS 0 udata_bank44 -
+__Hudata_bank45 178 0 ABS 0 udata_bank45 -
+__Hudata_bank46 178 0 ABS 0 udata_bank46 -
+__Hudata_bank47 178 0 ABS 0 udata_bank47 -
+__Hudata_bank48 178 0 ABS 0 udata_bank48 -
+__Hudata_bank49 178 0 ABS 0 udata_bank49 -
+__Hudata_bank50 178 0 ABS 0 udata_bank50 -
+__Hudata_bank51 178 0 ABS 0 udata_bank51 -
+__Hudata_bank52 178 0 ABS 0 udata_bank52 -
+__Hudata_bank53 178 0 ABS 0 udata_bank53 -
+__Hudata_bank54 178 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/EJERCICIO_2.o
+__Hedata 178 0 ABS 0 edata -
+__Hudata 178 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 178 0 ABS 0 edata -
+__Ludata 178 0 ABS 0 udata -
+__HCODE 178 0 ABS 0 CODE -
+__Hcode 178 0 ABS 0 code -
+__Hdata 178 0 ABS 0 data -
+__LCODE 28 0 ABS 0 CODE -
+__Lcode 178 0 ABS 0 code -
+__Ldata 178 0 ABS 0 data -
+__LHigh_Priority 18 0 CODE 0 High_Priority -
+__S0 0 0 ABS 0 - -
+__S1 506 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 178 0 ABS 0 udata_bank10 -
+__Ludata_bank11 178 0 ABS 0 udata_bank11 -
+__Ludata_bank12 178 0 ABS 0 udata_bank12 -
+__Ludata_bank13 178 0 ABS 0 udata_bank13 -
+__Ludata_bank14 178 0 ABS 0 udata_bank14 -
+__Ludata_bank15 178 0 ABS 0 udata_bank15 -
+__Ludata_bank16 178 0 ABS 0 udata_bank16 -
+__Ludata_bank17 178 0 ABS 0 udata_bank17 -
+__Ludata_bank18 178 0 ABS 0 udata_bank18 -
+__Ludata_bank19 178 0 ABS 0 udata_bank19 -
+__Ludata_bank20 178 0 ABS 0 udata_bank20 -
+__Ludata_bank21 178 0 ABS 0 udata_bank21 -
+__Ludata_bank22 178 0 ABS 0 udata_bank22 -
+__Ludata_bank23 178 0 ABS 0 udata_bank23 -
+__Ludata_bank24 178 0 ABS 0 udata_bank24 -
+__Ludata_bank25 178 0 ABS 0 udata_bank25 -
+__Ludata_bank26 178 0 ABS 0 udata_bank26 -
+__Ludata_bank27 178 0 ABS 0 udata_bank27 -
+__Ludata_bank28 178 0 ABS 0 udata_bank28 -
+__Ludata_bank29 178 0 ABS 0 udata_bank29 -
+__Ludata_bank30 178 0 ABS 0 udata_bank30 -
+__Ludata_bank31 178 0 ABS 0 udata_bank31 -
+__Ludata_bank32 178 0 ABS 0 udata_bank32 -
+__Ludata_bank33 178 0 ABS 0 udata_bank33 -
+__Ludata_bank34 178 0 ABS 0 udata_bank34 -
+__Ludata_bank35 178 0 ABS 0 udata_bank35 -
+__Ludata_bank36 178 0 ABS 0 udata_bank36 -
+__Ludata_bank37 178 0 ABS 0 udata_bank37 -
+__Ludata_bank38 178 0 ABS 0 udata_bank38 -
+__Ludata_bank39 178 0 ABS 0 udata_bank39 -
+__Ludata_bank40 178 0 ABS 0 udata_bank40 -
+__Ludata_bank41 178 0 ABS 0 udata_bank41 -
+__Ludata_bank42 178 0 ABS 0 udata_bank42 -
+__Ludata_bank43 178 0 ABS 0 udata_bank43 -
+__Ludata_bank44 178 0 ABS 0 udata_bank44 -
+__Ludata_bank45 178 0 ABS 0 udata_bank45 -
+__Ludata_bank46 178 0 ABS 0 udata_bank46 -
+__Ludata_bank47 178 0 ABS 0 udata_bank47 -
+__Ludata_bank48 178 0 ABS 0 udata_bank48 -
+__Ludata_bank49 178 0 ABS 0 udata_bank49 -
+__Ludata_bank50 178 0 ABS 0 udata_bank50 -
+__Ludata_bank51 178 0 ABS 0 udata_bank51 -
+__Ludata_bank52 178 0 ABS 0 udata_bank52 -
+__Ludata_bank53 178 0 ABS 0 udata_bank53 -
+__Ludata_bank54 178 0 ABS 0 udata_bank54 -
+__HHigh_Priority 28 0 CODE 0 High_Priority -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/EJERCICIO_2.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Hlow_priority 18 0 CODE 0 low_priority -
+__Ludata_bank5 178 0 ABS 0 udata_bank5 -
+__Ludata_bank6 178 0 ABS 0 udata_bank6 -
+__Ludata_bank7 178 0 ABS 0 udata_bank7 -
+__Ludata_bank8 178 0 ABS 0 udata_bank8 -
+__Ludata_bank9 178 0 ABS 0 udata_bank9 -
+__Lleds_puerto_C 0 0 CODE 0 leds_puerto_C -
+__Hudata_acs 178 0 ABS 0 udata_acs -
+__Llow_priority 4 0 CODE 0 low_priority -
+__Hleds_puerto_C 4 0 CODE 0 leds_puerto_C -
+__Ludata_acs 178 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_acs 1 500 500 6 1
+leds_puerto_C 0 0 0 28 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
